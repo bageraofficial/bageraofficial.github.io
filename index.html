@@ -3,112 +3,228 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bagera Official | Trendy Bags for Every Vibe</title>
-<meta name="description" content="Bagera Official — stylish ladies' bags for every vibe. Shop trendy handbags, shoulder bags and more in Nepal.">
+<title>Bagera Official | Ladies' Bags in Nepal</title>
+<meta name="description" content="Bagera Official — trendy and stylish ladies' bags in Pokhara, Nepal.">
 <style>
-:root{
-  --rose:#c97878; --rose2:#e9b7b4; --cream:#fff8f6; --ink:#171313;
-  --muted:#766b69; --white:#fff; --line:#ead8d5;
+:root {
+  --ink:#241f21; --rose:#d9a5ae; --rose2:#f6e4e7; --cream:#fffaf8;
+  --line:#eadde0; --muted:#74686b; --white:#fff;
 }
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream)}
-a{text-decoration:none;color:inherit}
-.nav{position:sticky;top:0;z-index:10;background:rgba(255,248,246,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.navin{max-width:1120px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-family:Georgia,serif;font-size:25px;letter-spacing:4px;font-weight:700}
-.navlinks{display:flex;gap:24px;font-size:14px}
-.btn{display:inline-block;background:var(--ink);color:white;padding:13px 20px;border-radius:999px;font-weight:700;font-size:14px}
-.hero{max-width:1120px;margin:auto;padding:75px 22px 65px;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
-.kicker{color:var(--rose);font-weight:800;letter-spacing:3px;font-size:12px;text-transform:uppercase}
-h1{font-family:Georgia,serif;font-size:clamp(48px,7vw,82px);line-height:.95;margin:14px 0 22px;letter-spacing:-3px}
-.hero p{font-size:18px;line-height:1.7;color:var(--muted);max-width:560px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn.alt{background:white;color:var(--ink);border:1px solid var(--line)}
-.logo-card{background:linear-gradient(145deg,#fff,#f9e8e5);border:1px solid var(--line);border-radius:35px;padding:30px;box-shadow:0 25px 70px rgba(80,40,40,.12)}
-.logo-card img{width:100%;display:block;border-radius:22px}
-.section{max-width:1120px;margin:auto;padding:55px 22px}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:25px}
-h2{font-family:Georgia,serif;font-size:40px;margin:0}
-.section-head p{color:var(--muted);margin:0}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:white;border:1px solid var(--line);border-radius:24px;overflow:hidden}
-.product-img{height:260px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f8e1df,#fff)}
-.bag-shape{width:135px;height:105px;border:4px solid #292222;border-radius:15px 15px 24px 24px;position:relative;background:#f1b9b4}
-.bag-shape:before{content:"";position:absolute;width:65px;height:45px;border:4px solid #292222;border-bottom:0;border-radius:50px 50px 0 0;left:31px;top:-45px}
-.bag-shape:after{content:"B";position:absolute;left:54px;top:28px;font-family:Georgia,serif;font-size:40px;font-weight:bold}
-.info{padding:18px}.info h3{margin:0 0 7px;font-family:Georgia,serif;font-size:21px}.info p{margin:0;color:var(--muted);font-size:14px}.price{margin-top:14px;font-weight:800;font-size:17px;color:var(--rose)}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.about-box{background:white;border:1px solid var(--line);border-radius:25px;padding:28px}
-.about-box p{color:var(--muted);line-height:1.8}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:18px}
-.feature{padding:20px;border:1px solid var(--line);border-radius:20px;background:#fff}
-.feature b{display:block;margin-bottom:7px}.feature span{font-size:14px;color:var(--muted)}
-.cta{max-width:1120px;margin:25px auto 70px;padding:48px 30px;border-radius:30px;background:var(--ink);color:#fff;text-align:center}
-.cta h2{margin-bottom:12px}.cta p{color:#d9cecc;line-height:1.6}.cta .btn{background:#fff;color:var(--ink);margin-top:10px}
-footer{border-top:1px solid var(--line);padding:30px 22px;color:var(--muted);font-size:13px;text-align:center}
-@media(max-width:800px){
- .hero{grid-template-columns:1fr;padding-top:45px}.navlinks{display:none}
- .grid,.about,.features{grid-template-columns:1fr}
- h1{font-size:58px}.section-head{display:block}.section-head p{margin-top:10px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,250,248,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:2px}
+.brand img{width:48px;height:48px;object-fit:contain;border-radius:50%}
+nav{display:flex;gap:24px;align-items:center;font-size:14px;font-weight:700}
+nav a:hover{color:#a96f79}
+.nav-btn,.hero-btn,.order{display:inline-block;padding:12px 18px;border-radius:999px;font-weight:800;transition:.2s}
+.nav-btn,.hero-btn.primary,.order{background:var(--ink);color:#fff}
+.nav-btn:hover,.hero-btn.primary:hover,.order:hover{transform:translateY(-2px);opacity:.9}
+.hero{padding:78px 0 70px;background:linear-gradient(135deg,#fffaf8 0%,#f9e9ec 100%)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}
+.eyebrow{font-size:13px;letter-spacing:3px;font-weight:900;color:#a96f79;margin-bottom:12px}
+h1{font-size:clamp(48px,8vw,88px);line-height:.95;letter-spacing:-3px;margin-bottom:18px}
+.hero h2{font-size:clamp(25px,4vw,42px);margin-bottom:14px}
+.hero p{color:var(--muted);max-width:580px;font-size:17px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero-btn.secondary{border:1px solid var(--ink);background:transparent}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:30px;padding:20px;box-shadow:0 20px 55px rgba(50,25,30,.08)}
+.hero-card img{width:100%;height:390px;object-fit:cover;border-radius:22px}
+.section{padding:78px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}
+.section-head h2{font-size:38px;line-height:1.1}
+.section-head p{color:var(--muted);max-width:520px}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.product{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(50,25,30,.05)}
+.photo-wrap{height:330px;background:#f3e8e7;overflow:hidden}
+.photo-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.product:hover img{transform:scale(1.04)}
+.product-body{padding:20px}
+.product h3{font-size:21px;margin-bottom:5px}
+.price{font-weight:900;font-size:18px;color:#a96f79}
+.small{color:var(--muted);font-size:14px;margin:4px 0 16px}
+.order{font-size:14px}
+.about{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-box{padding:32px;border:1px solid var(--line);border-radius:24px;background:var(--cream)}
+.about h2{font-size:38px;margin-bottom:12px}
+.about p{color:var(--muted)}
+.info-list{display:grid;gap:12px;margin-top:20px}
+.info{padding:15px 18px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.contact{padding-bottom:95px}
+.contact-card{background:var(--ink);color:#fff;border-radius:28px;padding:42px;display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.contact-card p{color:#ddd;margin-top:8px}
+.contact-links{display:grid;gap:12px}
+.contact-link{padding:15px 18px;border:1px solid rgba(255,255,255,.2);border-radius:14px}
+footer{padding:28px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted);text-align:center}
+.note{font-size:12px;color:var(--muted);margin-top:15px}
+@media(max-width:850px){
+ .hero-grid,.about-grid,.contact-card{grid-template-columns:1fr}
+ .products{grid-template-columns:repeat(2,1fr)}
+ nav a:not(.nav-btn){display:none}
+}
+@media(max-width:560px){
+ .products{grid-template-columns:1fr}
+ .photo-wrap{height:360px}
+ h1{letter-spacing:-2px}
+ .hero{padding-top:55px}
+ .contact-card{padding:28px}
 }
 </style>
 </head>
 <body>
-<nav class="nav">
-  <div class="navin">
-    <a class="brand" href="#">BAGERA</a>
-    <div class="navlinks"><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></div>
-    <a class="btn" href="#shop">Shop Bags</a>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top"><img src="bagera-logo.png" alt="Bagera Official logo"><span>BAGERA</span></a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-btn" href="#shop">Shop Bags</a>
+    </nav>
   </div>
-</nav>
+</header>
 
-<main>
+<main id="top">
 <section class="hero">
-  <div>
-    <div class="kicker">Bagera Official</div>
-    <h1>Carry your<br>vibe.</h1>
-    <p>Trendy, feminine bags made to complete your everyday look. Discover your next favorite bag with Bagera Official.</p>
-    <div class="actions">
-      <a class="btn" href="#shop">Explore Collection</a>
-      <a class="btn alt" href="#contact">Contact Us</a>
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">BAGERA OFFICIAL • POKHARA</div>
+      <h1>Carry your vibe.</h1>
+      <h2>Trendy bags for every look.</h2>
+      <p>Discover stylish ladies' bags from Bagera Official. Based in Pokhara, with delivery across Nepal.</p>
+      <div class="hero-actions">
+        <a class="hero-btn primary" href="#shop">Explore Collection</a>
+        <a class="hero-btn secondary" href="#contact">Contact Bagera</a>
+      </div>
     </div>
-  </div>
-  <div class="logo-card">
-    <img src="bagera-logo.png" alt="Bagera Official logo">
+    <div class="hero-card">
+      <img src="https://images.pexels.com/photos/8989539/pexels-photo-8989539.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Bagera featured handbag">
+    </div>
   </div>
 </section>
 
 <section class="section" id="shop">
-  <div class="section-head">
-    <div><div class="kicker">The collection</div><h2>Trending bags</h2></div>
-    <p>Fresh styles for every vibe.</p>
-  </div>
-  <div class="grid">
-    <article class="card"><div class="product-img"><div class="bag-shape"></div></div><div class="info"><h3>Everyday Blush</h3><p>Chic everyday shoulder bag</p><div class="price">Price — Contact us</div></div></article>
-    <article class="card"><div class="product-img"><div class="bag-shape" style="background:#ded1cf"></div></div><div class="info"><h3>City Muse</h3><p>Minimal bag for your daily look</p><div class="price">Price — Contact us</div></div></article>
-    <article class="card"><div class="product-img"><div class="bag-shape" style="background:#d8c2aa"></div></div><div class="info"><h3>Classic Charm</h3><p>Elegant style for special days</p><div class="price">Price — Contact us</div></div></article>
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">OUR COLLECTION</div>
+        <h2>Featured bags</h2>
+      </div>
+      <p>These are sample stock photos to make the website look complete. Replace them with your actual bag photos when you have them.</p>
+    </div>
+    <div class="products">
+      
+      <article class="product">
+        <div class="photo-wrap"><img src="https://images.pexels.com/photos/12471934/pexels-photo-12471934.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Blush Mini Tote" loading="lazy"></div>
+        <div class="product-body">
+          <h3>Blush Mini Tote</h3>
+          <p class="price">DM for price</p>
+          <p class="small">Stylish ladies' bag • Bagera Official</p>
+          <a class="order" href="https://wa.me/9779768964984?text=Hello%20Bagera%2C%20I%20am%20interested%20in%20the%20Blush%20Mini%20Tote." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+    
+      <article class="product">
+        <div class="photo-wrap"><img src="https://images.pexels.com/photos/5658856/pexels-photo-5658856.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Classic Black" loading="lazy"></div>
+        <div class="product-body">
+          <h3>Classic Black</h3>
+          <p class="price">DM for price</p>
+          <p class="small">Stylish ladies' bag • Bagera Official</p>
+          <a class="order" href="https://wa.me/9779768964984?text=Hello%20Bagera%2C%20I%20am%20interested%20in%20the%20Classic%20Black." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+    
+      <article class="product">
+        <div class="photo-wrap"><img src="https://images.pexels.com/photos/8989539/pexels-photo-8989539.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Beige Everyday" loading="lazy"></div>
+        <div class="product-body">
+          <h3>Beige Everyday</h3>
+          <p class="price">DM for price</p>
+          <p class="small">Stylish ladies' bag • Bagera Official</p>
+          <a class="order" href="https://wa.me/9779768964984?text=Hello%20Bagera%2C%20I%20am%20interested%20in%20the%20Beige%20Everyday." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+    
+      <article class="product">
+        <div class="photo-wrap"><img src="https://images.pexels.com/photos/5273036/pexels-photo-5273036.jpeg?auto=compress&cs=tinysrgb&w=900" alt="City Shoulder Bag" loading="lazy"></div>
+        <div class="product-body">
+          <h3>City Shoulder Bag</h3>
+          <p class="price">DM for price</p>
+          <p class="small">Stylish ladies' bag • Bagera Official</p>
+          <a class="order" href="https://wa.me/9779768964984?text=Hello%20Bagera%2C%20I%20am%20interested%20in%20the%20City%20Shoulder%20Bag." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+    
+      <article class="product">
+        <div class="photo-wrap"><img src="https://images.pexels.com/photos/2813528/pexels-photo-2813528.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Elegant Handbag" loading="lazy"></div>
+        <div class="product-body">
+          <h3>Elegant Handbag</h3>
+          <p class="price">DM for price</p>
+          <p class="small">Stylish ladies' bag • Bagera Official</p>
+          <a class="order" href="https://wa.me/9779768964984?text=Hello%20Bagera%2C%20I%20am%20interested%20in%20the%20Elegant%20Handbag." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+    
+      <article class="product">
+        <div class="photo-wrap"><img src="https://images.pexels.com/photos/8989866/pexels-photo-8989866.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Soft Neutral Bag" loading="lazy"></div>
+        <div class="product-body">
+          <h3>Soft Neutral Bag</h3>
+          <p class="price">DM for price</p>
+          <p class="small">Stylish ladies' bag • Bagera Official</p>
+          <a class="order" href="https://wa.me/9779768964984?text=Hello%20Bagera%2C%20I%20am%20interested%20in%20the%20Soft%20Neutral%20Bag." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+    
+    </div>
+    <p class="note">Sample product photos are from Pexels. The products shown are examples and should not be presented as your actual stock until you replace the photos/details.</p>
   </div>
 </section>
 
-<section class="section" id="about">
-  <div class="about">
-    <div class="about-box"><div class="kicker">Why Bagera</div><h2>Style starts with the bag.</h2></div>
-    <div class="about-box"><p>Bagera Official is an online ladies' bag brand focused on stylish, wearable pieces for modern women. From everyday looks to statement moments, we make it easy to find a bag that fits your vibe.</p></div>
-  </div>
-  <div class="features">
-    <div class="feature"><b>✨ Trend-led</b><span>Fresh styles inspired by today's fashion.</span></div>
-    <div class="feature"><b>👜 Curated bags</b><span>Selected with everyday style in mind.</span></div>
-    <div class="feature"><b>🇳🇵 Nepal delivery</b><span>Online shopping made simple across Nepal.</span></div>
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div>
+      <div class="eyebrow">ABOUT BAGERA</div>
+      <h2>Style that goes with you.</h2>
+      <p>Bagera Official is a ladies' bag store based in Pokhara, Nepal. We focus on stylish, everyday and occasion-ready bags.</p>
+    </div>
+    <div class="about-box">
+      <h3>Store details</h3>
+      <div class="info-list">
+        <div class="info">📍 <strong>Location:</strong> Pokhara, Nepal</div>
+        <div class="info">🚚 <strong>Delivery:</strong> Across Nepal</div>
+        <div class="info">📱 <strong>Phone / WhatsApp:</strong> 9768964984</div>
+        <div class="info">📘 <strong>Facebook:</strong> Bagera</div>
+        <div class="info">📸 <strong>Instagram:</strong> Bagera</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="cta" id="contact">
-  <h2>Find your next favorite bag.</h2>
-  <p>Follow Bagera Official and message us for orders, product details and availability.</p>
-  <a class="btn" href="#">Message Bagera</a>
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="contact-card">
+      <div>
+        <div class="eyebrow" style="color:#e8b7bf">CONTACT</div>
+        <h2>Ready to order?</h2>
+        <p>Message Bagera for product availability, price, colors and delivery details.</p>
+      </div>
+      <div class="contact-links">
+        <a class="contact-link" href="tel:+9779768964984">📞 Call: 9768964984</a>
+        <a class="contact-link" href="https://wa.me/9779768964984" target="_blank" rel="noopener">💬 WhatsApp Bagera</a>
+        <a class="contact-link" href="https://www.facebook.com/Bagera" target="_blank" rel="noopener">📘 Facebook: Bagera</a>
+        <a class="contact-link" href="https://www.instagram.com/Bagera/" target="_blank" rel="noopener">📸 Instagram: Bagera</a>
+      </div>
+    </div>
+  </div>
 </section>
 </main>
 
-<footer>© 2026 Bagera Official · Trendy Bags for Every Vibe</footer>
+<footer>
+  <div class="container">© 2026 Bagera Official • Pokhara, Nepal • Trendy Bags for Every Vibe</div>
+</footer>
 </body>
 </html>
